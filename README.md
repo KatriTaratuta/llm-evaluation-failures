@@ -12,6 +12,34 @@ We show that evaluation is no longer a passive measurement process, but an inter
 
 ---
 
+## Core Claim
+
+Evaluation in LLM systems is not a passive measurement process.
+
+It is an interactive system in which:
+
+- models adapt to evaluation signals
+- evaluators introduce variability and bias
+- results depend on prompt framing and sampling
+
+This breaks the assumption that evaluation reflects stable model capability.
+
+---  
+
+## Methodological Note
+
+These experiments are exploratory and based on small, manually collected samples.
+
+The goal is not statistical significance, but to demonstrate structural properties of LLM evaluation:
+
+- sensitivity to prompting
+- evaluator inconsistency
+- interaction effects between model and evaluation
+
+Such effects are expected to amplify in production-scale systems.
+
+--- 
+
 ## Key Questions
 
 - Can LLM-based evaluators produce stable and reliable scores?
@@ -54,3 +82,6 @@ We measure variability in outputs and scores under repeated runs.
 ## Reproducibility
 
 All experiments are implemented with simple scripts and can be reproduced with minimal setup.
+
+
+
